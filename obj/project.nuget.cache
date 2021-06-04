@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "5aBnXGtY9GFNEdDwBnOyc1DdJ4cT5ll3aWrJv/TtJSASE+64p0CmCTGG2h1LT6KCd+Ni0F9k8dlgcUOdUfoAhQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kenneth\\Documents\\Coding projects\\ApStatApplication\\ApStatToolsLibrary\\ApStatToolsLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kenneth\\.nuget\\packages\\mathnet.numerics\\4.15.0\\mathnet.numerics.4.15.0.nupkg.sha512",
+    "C:\\Users\\kenneth\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\kenneth\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

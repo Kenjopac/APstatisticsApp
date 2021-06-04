@@ -1,0 +1,44 @@
+﻿<Window x:Class="ApStatisticsApplicationUI.TIntervalAnswerSheet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApStatisticsApplicationUI"
+        mc:Ignorable="d"
+        Title="TIntervalAnswerSheet" Height="600" Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="TitleBox" FontSize="20" Padding="7" Text="Hello World" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" />
+        <TextBlock x:Name="ConditionsBox" FontSize="20" Padding="7" Text="" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" />
+        <Grid Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="SampleSizeBox" Text="Hello World" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" Padding="10" TextWrapping="WrapWithOverflow"/>
+            <TextBlock x:Name="SampleMeanBox" Text="Hello World" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" Padding="10" TextWrapping="WrapWithOverflow"/>
+            <TextBlock x:Name="SignificanceLevelBox" Text="Hello World" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" Padding="10" TextWrapping="WrapWithOverflow"/>
+            <TextBlock x:Name="TvalueBox" Text="Hello World" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" Padding="10" TextWrapping="WrapWithOverflow"/>
+            <TextBlock x:Name="ConfidenceIntervalBox" Text="Hello World" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" Padding="10" TextWrapping="WrapWithOverflow"/>
+            <TextBlock x:Name="ConclusionBox" Text="Hello World" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" Padding="10" Grid.RowSpan ="2" TextWrapping="WrapWithOverflow"/>
+        </Grid>
+
+        <Button x:Name="BackButton" Content="Back Button" FontSize="25" Grid.Column="0" Grid.Row="3" Click="BackButton_Click"/>
+
+    </Grid>
+</Window>

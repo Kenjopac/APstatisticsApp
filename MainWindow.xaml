@@ -1,0 +1,87 @@
+﻿<Window x:Class="ApStatisticsApplicationUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:ApStatisticsApplicationUI"
+        mc:Ignorable="d"
+        Title="ChiSquareCalcWindow" Height="600" Width="450">
+
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Grid x:Name="TopSrollMenu" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Background="Azure">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="PreviousChiTestButton" Click="PreviousChiTestButton_Click" Content="&lt;" FontSize="30">
+            </Button>
+            <TextBlock x:Name="TestType" Grid.Column="1" FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Button Grid.Column="2" x:Name="NextChiTestButton" Click="NextChiTestButton_Click" Content=">" FontSize="30">
+
+            </Button>
+
+        </Grid>
+        <Grid x:Name="Hypothesis" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" Grid.ColumnSpan="2" Background="GhostWhite">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Grid.Row="0" Source="images\download.png" Stretch="Fill" Margin="0,10"/>
+            <Image Grid.Column="0" Grid.Row="1" Source="images\Null-hypothesis-and-alternative-hypothesis.jpg" Stretch="Fill" Margin="0,11,7,11"/>
+            <TextBox x:Name="NullHypothesisTextBox" Grid.Row="0" Grid.Column="1" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" Margin="20,10" FontSize="17"/>
+            <TextBox x:Name="AlternativeHypothesisTextBox" Grid.Row="1" Grid.Column="1" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" Margin="20,10" FontSize="17"/>
+
+            <TextBlock Grid.Row="1" Grid.Column="0"/>
+
+        </Grid>
+        <Grid x:Name="ALpha" Grid.Row="4" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextAlignment="Center"> Significance <LineBreak/> Level </TextBlock>
+            <TextBox Grid.Column="1" x:Name="SignificanceLevelTextBox" FontSize="20" Margin="10" Padding="5" TextAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="DF" Grid.Row="4" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" TextAlignment="Center"> Degrees of <LineBreak/> Freedom </TextBlock>
+            <TextBox Grid.Column="1" x:Name="DegreesOfFreedomTextBox" FontSize="20" Margin="10" Padding="5" TextAlignment="Center"/>
+        </Grid>
+
+        <TextBlock Grid.Row="5" Grid.Column="1" FontSize="20" VerticalAlignment="Center" Margin="5,15,5,0">Observed</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="2" FontSize="20" VerticalAlignment="Center" Margin="5,15,5,0">Expected</TextBlock>
+        <TextBox x:Name="ObservedTextBox" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Grid.Row="6" FontSize="12" Padding="5" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" />
+        <TextBox x:Name="ExpectedTextBox" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="2" Grid.Row="6" FontSize="12" Padding="5" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" Margin="5,0,0,0" />
+        <Button x:Name="BackButton" Grid.Column="1" Grid.Row="8" Margin="30,8" Content="Go Back" FontSize="18" Click="WorkInProgress_Click"/>
+        <Button x:Name="AnswerButton" Grid.Column="2" Grid.Row="8" Margin="5" Content="Get Answer" FontSize="20" Click="AnswerButton_Click"/>
+        <Image x:Name="HelloKittyGif" Grid.Row="8" Grid.Column="1" gif:ImageBehavior.AnimatedSource="C:\Users\kenneth\Documents\Coding projects\ApStatApplication\ApStatisticsApplicationUI\images\HelloKittyGif_2.png" Visibility="Hidden" gif:ImageBehavior.RepeatBehavior="3" />
+    </Grid>
+</Window>

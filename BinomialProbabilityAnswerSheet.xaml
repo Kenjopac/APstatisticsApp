@@ -1,0 +1,54 @@
+﻿<Window x:Class="ApStatisticsApplicationUI.BinomialProbabilityAnswerSheet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApStatisticsApplicationUI"
+        mc:Ignorable="d"
+        Title="BinomialProbabilityAnswerSheet" Height="600" Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Binomial Probability Answer Sheet" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" />
+            <TextBlock x:Name="TotalTrialsDisplay" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="TotalTrials" VerticalAlignment="Center"/>
+            <TextBlock x:Name="PermutationsDisplay" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="Permutations" VerticalAlignment="Center"/>
+            <TextBlock x:Name="TotalSuccessDisplay" Grid.Row="2" Grid.Column="0" Text="Succ" VerticalAlignment="Center"/>
+            <TextBlock x:Name="SuccessProbabilityDisplay" Grid.Row="2" Grid.Column="1" Text="SuccProp" VerticalAlignment="Center"/>
+            <TextBlock x:Name="TotalFailsDisplay" Grid.Row="3" Grid.Column="0" Text="Fail" VerticalAlignment="Center"/>
+            <TextBlock x:Name="FailProbabilityDisplay" Grid.Row="3" Grid.Column="1" Text="FailProp" VerticalAlignment="Center"/>
+        </Grid>
+            
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="EqualsToTextBlock" Text="P(x = 10) = C(16 , 10)*(10^0.5)*(6^0.5)" Grid.Row="0" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" />
+            <TextBox x:Name="GreaterThanTextBlock" Text="Hello World" Grid.Row="1" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" />
+            <TextBox x:Name="GreaterThanEqualToTextBlock" Text="Hello World" Grid.Row="2" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" />
+            <TextBox x:Name="LessThanTextBlock" Text="Hello World" Grid.Row="3" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" />
+            <TextBox x:Name="LessThanEqualsToTextBlock" Text="Hello World" Grid.Row="4" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" />
+        </Grid>
+        <Button Grid.Row="2" x:Name="BackButton" Content="Go Back" FontSize="30" FontWeight="Light" Background="AliceBlue" Click="BackButton_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+C:\Users\kenneth\Documents\Coding projects\ApStatApplication\ApStatToolsLibrary\bin\Debug\netstandard2.0\ApStatToolsLibrary.deps.json
+C:\Users\kenneth\Documents\Coding projects\ApStatApplication\ApStatToolsLibrary\bin\Debug\netstandard2.0\ApStatToolsLibrary.dll
+C:\Users\kenneth\Documents\Coding projects\ApStatApplication\ApStatToolsLibrary\bin\Debug\netstandard2.0\ApStatToolsLibrary.pdb
+C:\Users\kenneth\Documents\Coding projects\ApStatApplication\ApStatToolsLibrary\obj\Debug\netstandard2.0\ApStatToolsLibrary.csprojAssemblyReference.cache
+C:\Users\kenneth\Documents\Coding projects\ApStatApplication\ApStatToolsLibrary\obj\Debug\netstandard2.0\ApStatToolsLibrary.AssemblyInfoInputs.cache
+C:\Users\kenneth\Documents\Coding projects\ApStatApplication\ApStatToolsLibrary\obj\Debug\netstandard2.0\ApStatToolsLibrary.AssemblyInfo.cs
+C:\Users\kenneth\Documents\Coding projects\ApStatApplication\ApStatToolsLibrary\obj\Debug\netstandard2.0\ApStatToolsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\kenneth\Documents\Coding projects\ApStatApplication\ApStatToolsLibrary\obj\Debug\netstandard2.0\ApStatToolsLibrary.dll
+C:\Users\kenneth\Documents\Coding projects\ApStatApplication\ApStatToolsLibrary\obj\Debug\netstandard2.0\ApStatToolsLibrary.pdb

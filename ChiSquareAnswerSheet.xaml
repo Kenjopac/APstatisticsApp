@@ -1,0 +1,71 @@
+﻿<Window x:Class="ApStatisticsApplicationUI.ChiSquareAnswerSheet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApStatisticsApplicationUI"
+        mc:Ignorable="d"
+        Title="ChiSquareAnswerSheet" Height="600" Width="450">
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+        </Grid.RowDefinitions>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" x:Name="TestTypeDisplay" Text="Hello World" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Margin="10"/>
+        <Grid x:Name="Conditions" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="RandomSampleConditionDisplay" Grid.Row="0" Text="Random sample of population of interest" Padding="4"/>
+            <TextBox x:Name="CategoricalVariablesDisplay" Grid.Row="2" Text="All variables are categorical" Padding="4"/>
+            <TextBox x:Name="EachExpGreaterThanFive" Grid.Row="1" Text="Expected Counts are all greater than/equal to five" Padding="4"/>
+            
+        </Grid>
+        <Grid x:Name ="FinalHypothesis" Background="White" Grid.Row="2" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Grid.Column="0" Grid.Row="0" Source="images\download.png" Stretch="Fill" Margin="0,10"/>
+            <Image Grid.Column="0" Grid.Row="1" Source="images\Null-hypothesis-and-alternative-hypothesis.jpg" Stretch="Fill" Margin="0,11,7,11"/>
+            <TextBox x:Name="NullHypothesisDisplay" Grid.Column="1" Grid.Row="0" Text="Hello WOrld" FontSize="17" VerticalAlignment="Center" Margin="5" TextWrapping="WrapWithOverflow"/>
+            <TextBox x:Name="AltHypothesisDisplay" Grid.Column="1" Grid.Row="1" Text="Hello WOrld" FontSize="17" VerticalAlignment="Center" Margin="5" TextWrapping="WrapWithOverflow"/>
+            
+        </Grid>
+        <TextBox Grid.Row="4" Grid.RowSpan="2" Background="Azure" Grid.Column="1" x:Name="ChiSquStatWorkDisplay" Text="Hello World asoifd asdjf oadsi" TextWrapping="Wrap" Padding="5"/>
+        <Grid Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="ChiSquareStatisticDisplay" Grid.Row="0" Text="Hello World" VerticalAlignment="Center" Padding="5"/>
+            <TextBox x:Name="DegreesOfFreedomDisplay" Grid.Row="1" Text="Hello World" VerticalAlignment="Center" Padding="5"/>
+            <TextBox x:Name="AlphaLevelDisplay" Grid.Row="2" Text="Hello World" VerticalAlignment="Center" Padding="5"/>
+            <TextBox x:Name="PValueDisplay" Grid.Row="3" Text="Pval = Chi^2CDF (2.33, 99, 5) = 0.00sdf1" VerticalAlignment="Center" Padding="5" TextWrapping="Wrap"/>
+        </Grid>
+        <TextBox x:Name="ConclusionDisplay" Background="Azure" Grid.Row="6" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" TextWrapping ="Wrap" TextAlignment="Left" Text="Hello World" FontSize="15" Padding="8"/>
+        <Button x:Name="ReOpen" Content="Go back" Grid.Row="7" Grid.Column="2" Margin="20,10" BorderThickness="0.55" Background="GhostWhite" Click="ReOpen_Click"/>
+    </Grid> 
+</Window>
