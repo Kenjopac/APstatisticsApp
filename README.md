@@ -1,2 +1,3 @@
 # Ken
-First Repository
+AP statistics application using WPF in C#.
+
